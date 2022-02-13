@@ -17,9 +17,10 @@
 // }
 
 let first_names = ["Arūn", "Kiril", "Shesnak", "Sidron", "Bratka", "Gavril", "Miljon", "Prostat", "Vald", "Duš", "Lemon"
-                ,"Vaflo", "Čiūd", "Aurim", "Sauso", "Limon", "Vyr"]
+                ,"Vaflo", "Čiūd", "Aurim", "Sauso", "Limon", "Vyr", "Chlam", "Piotr", "Shlang", "Roman", "Ramūn"]
 let last_names = ["Čiotko", "Piratov", "Slabanosov", "Kropik", "Čiūdov", "Shesnakov", "Pederososov", "Agromkov", "Oz" 
-                    ,"Prikolov", "Čiongov", "Civic", "Ramūnov", "Bliūdko"]
+                    ,"Prikolov", "Čiongov", "Civic", "Ramūnov", "Bliūdko", "Akiniov", "Bilow", "Gazonov", 
+                "Matadeuwsz", "Grabko", "Razinkov", "Chlebnicki", "Alkoholov"]
 
 function nameGenerator() {
     let randomFirstName = first_names[Math.floor(Math.random()*first_names.length)]
