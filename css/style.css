@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+    box-sizing: border-box;
+}
+
+.navigation {
+    display: flex;
+    background-image: linear-gradient(to right, rgba(255,0,0,0.65), rgba(194, 0, 0, 0.4));
+    height: 3rem;
+    align-items: center;
+    justify-content: right;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+#site_name {
+    color: black;
+    margin-right: auto;
+    padding-left: 50px;
+    font-size: 1.75rem;
+}
+
+.navigation ul {
+    text-align: right;
+    padding: 15px 0;
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-right: 3.6rem;
+    transition: 0.4s;
+}
+
+.navigation a:hover {
+    color: red;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 3rem);
+    width: 100%;
+    background-color: pink;
+}
+
+h1 {
+    position: relative;
+    font-size: 46px;
+    animation: animate 3s;
+}
+
+.text {
+    position: relative;
+    font-size: 24px;
+    animation: animate-text 3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    from {
+        top: -50px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+@keyframes animate-text {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    from {
+        top: 50px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section {
+        text-align: center;
+    }
+
+    #site_name {
+        padding-left: 15px;
+        font-size: 24px;
+    }
+
+    .hamburger {
+        display: block;
+        padding-right: 10px;
+        z-index: 3;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: 100%;
+        top: -5px;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(245, 124, 124);
+        border-bottom: 2px solid black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 2;
+    }
+
+    .nav-li {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .gameboard {
+        width: 95%;
+    }
+
+    form {
+        width: 90%;
+    }
+}

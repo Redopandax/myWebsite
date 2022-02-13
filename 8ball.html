@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/8ball.css">
+    <title>Booba</title>
+</head>
+<body>
+    <nav class="navigation">
+        <a href = "index.html" id="site_name">My Stupid Ass Website</a>
+        <ul class="nav-menu">
+            <li class="nav-li"><a href="dice.html" class="list-item">Dice Roll</a></li>
+            <li class="nav-li"><a href="random.html" class="list-item">Random Names</a></li>
+            <li class="nav-li"><a href="8ball.html" class="list-item">8Ball</a></li>
+            <li class="nav-li"><a href="#" id="spook" class="list-item">Project4</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <section>
+        <h2></h2>
+        <h1 id="answer"></h1>
+        <h3 id="booba">Ask the mighty 8-ball a question!</h3>
+        <form name="question_form" onsubmit="return false">
+            <input type="text" id="question" name="question">
+            <button onclick="eight_ball()">Ask!</button>
+        </form>
+    </section>
+    <script src="./javascript/8ball.js"></script>
+    <script src="./javascript/bababooye.js"></script>
+    <script src="./javascript/menu.js"></script>
+</body>
+</html>
